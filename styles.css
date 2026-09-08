@@ -462,3 +462,23 @@ footer a {
     transition: none !important;
   }
 }
+
+/* Project images */
+.project-image {
+  margin: 0;
+  min-width: 0;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #c9c7c0;
+}
+
+/* Keep featured images aligned on smaller screens */
+@media (max-width: 720px) {
+  .feature .project-image {
+    grid-column: 2;
+  }
+}
