@@ -482,3 +482,23 @@ footer a {
     grid-column: 2;
   }
 }
+
+/* Artwork gallery */
+.artwork-gallery {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.artwork-gallery figcaption {
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 720px) {
+  .artwork-gallery {
+    grid-template-columns: 1fr;
+  }
+}
